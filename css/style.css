@@ -6,9 +6,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
 .body {
   display: flex;
   min-height: 100vh;
@@ -41,21 +38,14 @@
   display: none;
 }
 
-@media only screen and (max-width: 650px) {
-  .media {
-      display: block;
-  }
 
-  .main {
-      display: none !important;
-  }
-}
 
 body .container {
   display: flex;
   width: 1620px;
   max-width: 100%;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 1px);
+
 }
 
 @media only screen and (max-width: 1440px) {
@@ -86,11 +76,11 @@ body .container {
 }
 
 .container .rightSide {
-  position: relative;
+  /* position: relative;
   flex-direction: column;
   overflow: hidden;
   flex: 40%;
-  background-color: var(--right-side);
+  background-color: var(--right-side); */
 }
 
 .container .rightSide::before {
@@ -537,15 +527,6 @@ button {
   color: var(--h4);
 }
 
-.chatMessage::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -12px;
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(135deg, var(--chat) 0%, var(--chat) 50%, transparent 50%, transparent);
-}
 
 .chatMessage .msg-footer {
   position: absolute;
@@ -593,16 +574,6 @@ button {
   margin-right: auto;
 }
 
-.chatMessage.frnd-chat::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -12px;
-  width: 20px;
-  height: 20px;
-  background: linear-gradient(225deg, var(--block-footer) 0%, var(--block-footer) 50%, transparent 50%, transparent);
-}
-
 
 /* Chat Input */
 .chat-footer {
@@ -611,6 +582,8 @@ button {
   background: var(--secondary);
   justify-content: space-between;
   align-items: center;
+  
+
 }
 
 .chat-footer .icons {
