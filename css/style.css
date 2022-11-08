@@ -44,7 +44,7 @@ body .container {
   display: flex;
   width: 1620px;
   max-width: 100%;
-  height: calc(100vh - 1px);
+  height: calc(100vh - 40px);
 
 }
 
@@ -76,11 +76,11 @@ body .container {
 }
 
 .container .rightSide {
-  /* position: relative;
+  position: relative;
   flex-direction: column;
   overflow: hidden;
   flex: 40%;
-  background-color: var(--right-side); */
+  background-color: var(--right-side);
 }
 
 .container .rightSide::before {
@@ -577,8 +577,9 @@ button {
 
 /* Chat Input */
 .chat-footer {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 69.1%;
   background: var(--secondary);
   justify-content: space-between;
   align-items: center;
