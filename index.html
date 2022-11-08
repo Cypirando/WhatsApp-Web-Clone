@@ -30,9 +30,9 @@
     <div class="container main">
   <div class="leftSide animate__animated animate__fadeInRight" id="leftSid">
     <!-- Header -->
-    <div class="header">
+    <div class="header" >
         <!-- Profile Picture -->
-        <div class="userImg">
+        <div class="userImg" id="profile">
             <img src="images/Avatar-10.png" alt="" class="cover">
         </div>
 
@@ -94,55 +94,19 @@
     </div>
 
     <!-- Chats Box -->
-    <div class="chats">
-        <!-- Chats 1 -->
-        <div class="block chat-list" onclick="opemRightSide()">
-            <!-- Img -->
-            <div class="imgBox">
-                <img src="images/Avatar-7.png" class="cover">
-            </div>
-            <!-- Text -->
-            <div class="h-text">
-                <div class="head">
-                    <h4 title="Daniell" aria-label="Daniell">Daniell</h4>
-                    <p class="time">12:44 AM</p>
-                </div>
-                <div class="message-chat">
-                    <div class="tick-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"
-                            aria-label="read" class="white-tick">
-                            <path fill="currentColor"
-                                d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                            </path>
-                        </svg>
-                    </div>
+    <div class="chats" id="chats-every">
+    
+        
+              
 
-                    <div class="chat-text-icon">
-                        <span class="thanks">Blz até quinta feira então</span>
-                        <div class="icon-more">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                class="hide animate__animated animate__fadeInUp">
-                                <path fill="currentColor"
-                                    d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
     </div>
 </div>  
 <div class="Right-Container" style="flex: 70%; display: flex;overflow: hidden;"  id="right">
     <div class="rightSide"  style="display: none;" id="rightSide">
         <div class="header">
-            <div class="imgText" role="button">
-                <div class="userImg">
-                    <img src="images/Avatar-7.png" alt="" class="cover">
-                </div>
-                <h4 title="Daniel" aria-label="Daniel">Daniel<br><span aria-label="online">online</span></h4>
+            <div class="imgText" id="id-perfil" role="button">
+               
             </div>
 
             <!-- Icons -->
@@ -325,9 +289,9 @@
         </div>
         <div class="intro-sub">
             <h1 class="intro-text">Whatsapp Web Clone</h1>
-            <span class="intro-span">Envie e receba mensagens sem manter seu telefone online.
+            <span class="intro-span">Envie e receba mensagens sem precisar manter seu celular conectado à internet.
                 <br>
-                Use o WhatsApp em até 4 dispositivos vinculados e 1 telefone ao mesmo tempo.
+                Use o WhatsApp em até quatro aparelhos conectados e um celular ao mesmo tempo.
             </span>
         </div>
     </div>

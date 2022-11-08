@@ -577,9 +577,8 @@ button {
 
 /* Chat Input */
 .chat-footer {
-  position: fixed;
-  bottom: 0;
-  width: 69.1%;
+  position: relative;
+  width: 100%;
   background: var(--secondary);
   justify-content: space-between;
   align-items: center;
