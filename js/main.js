@@ -1,222 +1,24 @@
-const user_01 = [
-  {
-    message: "Olá tudo bem",
-    id: 1,
-    from: {
-      id: "55",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Reginaldo rossi",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:41:17.720Z",
-  },
-  {
-    message: "Olá tudo bem e por ai?",
-    id: 2,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "José maria",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:41:17.720Z",
-  },
-  {
-    message: "Estou bem",
-    id: 3,
-    from: {
-      id: "55",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Reginaldo rossi",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:42:17.720Z",
-  },
-  {
-    message: "Como está seus investimentos?",
-    id: 4,
-    from: {
-      id: "55",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Reginaldo rossi",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:43:17.720Z",
-  },
-  {
-    message: "Infelizmente perdi tudo",
-    id: 5,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "José maria",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:45:19.720Z",
-  },
-  {
-    message: "Estou falido e vendendo picolés para sobreviver",
-    id: 6,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "José maria",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:46:17.720Z",
-  },
-  {
-    message: "Pode me emprestar uma grana?",
-    id: 7,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "José maria",
-    },
-    read: 2,
-    createdAt: "2022-11-07T16:48:17.720Z",
-  },
-  {
-    message: "Não",
-    id: 8,
-    from: {
-      id: "55",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Reginaldo rossi",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:49:17.720Z",
-  },
-];
-const user_02 = [
-  {
-    message: "Hello",
-    id: 1,
-    from: {
-      id: "56",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Faustão Show",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:41:17.720Z",
-  },
-  {
-    message: "Hi, good night, how are you?",
-    id: 2,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "Marta Pereira",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:41:17.720Z",
-  },
-  {
-    message: "I' am fine and you?",
-    id: 3,
-    from: {
-      id: "56",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Faustão Show",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:42:17.720Z",
-  },
-  {
-    message: "Nice",
-    id: 4,
-    from: {
-      id: "56",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Faustão Show",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:43:17.720Z",
-  },
-  {
-    message: "this is good",
-    id: 5,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "Marta Pereira",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:45:19.720Z",
-  },
-  {
-    message: "bye, see you tomorrow",
-    id: 6,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "Marta Pereira",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:46:17.720Z",
-  },
-  {
-    message: "Okay",
-    id: 7,
-    from: {
-      id: "you",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-2989.jpg",
-      name: "Marta Pereira",
-    },
-    read: 2,
-    createdAt: "2022-11-07T16:48:17.720Z",
-  },
-  {
-    message: ":)",
-    id: 8,
-    from: {
-      id: "56",
-      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-      name: "Faustão Show",
-    },
-    read: 3,
-    createdAt: "2022-11-07T16:49:17.720Z",
-  },
-];
-// --- campo read:
-// 0 = pendente
-// 1 = enviado
-// 2 = recebido
-// 3 = lido
-
-// from.id é o id do usuario que mandou a msg, se for "you" foi vc que enviou
-// 
-
+/*---Elementos para renderizar na tela---*/
 const elementoParaExibirMsgEnviadas = document.getElementById('chat_box')
 const elementoParaExibirContatos = document.getElementById('chats-every')
 const elementoParaExibirPerfils = document.getElementById('id-perfil')
 const elementoParaExibirMeuPerfil = document.getElementById('profile')
-
-// exibirNaTela(user_02)
-// exibeContatos(user_02)
-exibirNaTela(user_01)
-exibeContatos(user_01)
-exibePerfil(user_01)
-exibirMeuPerfil(user_01)
-// exibePerfil(user_02)
-
+const elementoParaExibirADataDasMensagens = document.getElementById('data-conversa')
 
 /*---função para abrir chat de conversas---*/
 function opemRightSide() {
   document.getElementById("rightSide").style.display = "flex"
   document.getElementById("Intro-Left").style.display = "none"
-
 }
 
 /*---função para imprimir as mensagens no campo direito---*/
 function exibirNaTela(mensagens) {
   mensagens
-  // .slice(-9)
-  .forEach(item => {
-
-    if (item.from.id == 'you') {
-      elementoParaExibirMsgEnviadas.innerHTML +=
-        ` 
+    // .slice(-9)
+    .forEach(item => {
+      if (item.from.id == 'you') {
+        elementoParaExibirMsgEnviadas.innerHTML +=
+          ` 
         <p class="chatMessage my-chat">
         <span>${item.message}</span>
         <span class="chat__msg-filler"> </span>
@@ -231,11 +33,10 @@ function exibirNaTela(mensagens) {
         </span>
        
         </p>
-           
-        
-        `} else {
-      elementoParaExibirMsgEnviadas.innerHTML +=
         `
+      } else {
+        elementoParaExibirMsgEnviadas.innerHTML +=
+          `
             <p class="chatMessage frnd-chat" >
              <span>${item.message}</span>
             <span class="chat__msg-filler"> </span>
@@ -250,21 +51,20 @@ function exibirNaTela(mensagens) {
             </span>
            
             </p>
-           
             `
-    }
-  });
+      }
+    });
 }
-/*---função para imprimir os contatos na tela esquerda---*/
 
+/*---função para imprimir os contatos na tela esquerda---*/
 function exibeContatos(usuario) {
   usuario
-  .slice(-2)
-  .find(perfil => {
-    if (perfil.from.id != 'you') {
-      // console.log(ultimaMensagem)
-      elementoParaExibirContatos.innerHTML +=
-        `
+    .slice(-2)
+    .find(perfil => {
+      if (perfil.from.id != 'you') {
+        // console.log(ultimaMensagem)
+        elementoParaExibirContatos.innerHTML +=
+          `
     <!-- Chats 1 -->
     <div class="block chat-list" onclick="opemRightSide()">
         <!-- Img -->
@@ -304,40 +104,126 @@ function exibeContatos(usuario) {
     </div>
 
     `
-    } else { '' }
-  })
+      } else { '' }
+    })
 }
 
 /*---função para exibir o perfil na tela direita---*/
 function exibePerfil(usuario) {
+  // const perfil = find.from.id != 
   usuario
-  .slice(-3)
-  // .find( usuario.from.id === usuario)
-  .forEach(perfil => {
-    if (perfil.from.id != 'you') {
-      // console.log(ultimaMensagem)
-      elementoParaExibirPerfils.innerHTML +=
-        `
-    <div class="userImg">
-    <img src="${perfil.from.avatar}" alt="" class="cover">
-    </div>
-    <h4 title="Daniel" aria-label="Daniel">${perfil.from.name}<br><span aria-label="online">online</span></h4>
-    `
-    } else { '' }
-  })
+    .slice(-3)
+    // .find( usuario.from.id === usuario)
+    .forEach(perfil => {
+      if (perfil.from.id != 'you') {
+        // console.log(ultimaMensagem)
+        elementoParaExibirPerfils.innerHTML +=
+          `
+          <div class="userImg">
+            <img src="${perfil.from.avatar}" alt="" class="cover">
+          </div>
+          <h4 title="Daniel" aria-label="Daniel">${perfil.from.name}<br><span aria-label="online">online</span></h4>
+          `
+      } else { '' }
+    })
 }
+
 /*--- função para exibir minhas informaçoes---*/
-function exibirMeuPerfil(usuario){
+function exibirMeuPerfil(usuario) {
   usuario
-  .slice(-2)
-  .forEach(perfil =>{
-    if (perfil.from.id == 'you') {
-    elementoParaExibirMeuPerfil.innerHTML +=
-    `
-    
-    <img src="${perfil.from.avatar}" alt="" class="cover">
+    .slice(-2)
+    .forEach(perfil => {
+      if (perfil.from.id == 'you') {
+        elementoParaExibirMeuPerfil.innerHTML +=
+          `
+             <img src="${perfil.from.avatar}" alt="" class="cover">
+          `
+      }
+    })
+
+}
+
+/*---função para exibir a data no meio das conversas ---*/
+function exibirDataMensagens(dia) {
+  dia
    
-  `
-  }})
+    .forEach(dias => {
+      elementoParaExibirADataDasMensagens.innerHTML +=
+          `
+          <span class="chat__date">${dias.createdAt.substr(10, 5).split('-').reverse().join('/')}</span>
+          `
+      }
+      
+    )
+
+}
+
+
+
+
+/*---função para responder as conversas e colocar num novo array---*/
+// function adicionaItem(elemento) {
+//   // para de enviar arquivos para a pagina
+//   elemento.preventDefault();
+//   const texto = (this.querySelector('[name=item]')).value;
+//   const itemAtual = {
+//     message,
+    
+//     from: {
+//       id: "55",
+//       avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
+//       name: "Reginaldo rossi", 
+//     },
+//     read: "pendente",
+//     createdAt,
+//   }
+//   user_01.push(itemAtual);
+//   exibirNaTela(user_01);
+//   this.reset();
+// }
+
+// addItems.addEventListener('submit', adicionaItem);
+// exibirNaTela(user_01)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function criaMensagem(){
+  let novoItem = document.getElementById('item')
+
+  const element = {
+    message: novoItem.value,
+    id:8,
+    from: {
+      id: "55",
+      avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
+      name: "Reginaldo rossi", 
+    },
+    read: 3,
+    createdAt: "2022-11-07T16:41:17.720Z",
+  }
+console.log(element)
+  user_01.push(element)
+  document.getElementById('chat_box').innerHTML = ""
+  exibirNaTela(user_01)
+
+  // document.getElementById('novoItem').scrollIntoView({behavior: "auto"})
+  novoItem.value = ""
 
 }

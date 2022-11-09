@@ -6,6 +6,79 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+:root{
+  --appBackground: linear-gradient(#00a884 0%, #00a884 130px, #d9dbd5 130px, #d9dbd5 100%);
+  --side: #fff;
+  --right-side: #efeae2;
+  --rightSide-opacity: 0.488;
+  --secondary: #f0f2f5;
+  --border-right: #38353c55;
+  --icons: #54656f;
+  --tick-icons: #53bdeb;
+  --primary: #54656f;
+  --block: #e2e6ec;
+  --block-footer: #fff;
+  --h4: #111b21;
+  --unread: #25d366;
+  --dropdown: #fff;
+  --shadow-rgb: 11, 20, 26;
+  --listItem: ##3b4a54;
+  --listItemHover: #f5f6f6;
+  --chat: #d9fdd3;
+  --chat-date-bg: #fff;
+  --chat-date: #1e2a30;
+  --chat-encrption-bg: #ffeecd;
+  --chat-encryption: #54656f;
+  --icon-focus: rgba(11, 20, 26, 0.1);
+  --scrollBar: #c0c6ce;
+  --head-title: #fff;
+  --header-bg: #008069;
+  --new-g: #111b21;
+  --settings-icon: #8696a0;
+  --profile-bg: #fff;
+  --profile-BGG: #f0f2f5;
+  --yur-name-abt: #008069;
+  --border-not: #e9edef;
+  --checked-border: #008069;
+  --checked-bg: #008069;
+  --uncheck: rgba(59, 74, 84);
+  --uncheck-circle: #667781;
+  --last-seen-title: #54656f;
+  --learn-more: #027eb5;
+  --b-con: #8696a0;
+  --ul: #667781;
+  --modal-bg: hsla(0, 0%, 100%, 0.85);
+  --modal-content-bg: #fff;
+  --modal-text: #3b4a54;
+  --modal-btn: rgba(134, 150, 160, 0.15);
+  --modal-btn2: #00a884;
+  --modal-btn-text: #111b21;
+  --modal-btn-hover: #06cf9c;
+  --modal-shadow: 11, 20, 26;
+  --hover-wallpaper: #fff;
+  --border-active: #009de2;
+  --contact-info-h2: #1e2a30;
+  --danger: #ea0038;
+  --status-text: gainsboro;
+  --status-right-text: #9494a1;
+
+  --intro-bg: #f0f2f5;
+  --intro-border: #25d366;
+  --intro-svg1: #DAF7F3;
+  --intro-svg2: #fff;
+  --intro-opacity: none;
+  --intro-svg3: #fff;
+  --intro-svg4: #eefefa;
+  --intro-svg5: #eefaf6;
+  --intro-text: #41525d;
+  --intro-sub-text: #667781;
+
+  --emoji-active-after: #009688;
+  --emoji-tab-active: rgba(0, 0, 0, .6);
+  --emoji-label: rgba(0, 0, 0, .45);
+  --emoji-tab: rgba(0, 0, 0, .32);
+}
+
 .body {
   display: flex;
   min-height: 100vh;
@@ -811,82 +884,4 @@ button {
   color: var(--primary);
   display: -webkit-box;
   margin-bottom: 0rem;
-}
-
-
-
-
-
-
-:root{
-  --appBackground: linear-gradient(#00a884 0%, #00a884 130px, #d9dbd5 130px, #d9dbd5 100%);
-  --side: #fff;
-  --right-side: #efeae2;
-  --rightSide-opacity: 0.488;
-  --secondary: #f0f2f5;
-  --border-right: #38353c55;
-  --icons: #54656f;
-  --tick-icons: #53bdeb;
-  --primary: #54656f;
-  --block: #e2e6ec;
-  --block-footer: #fff;
-  --h4: #111b21;
-  --unread: #25d366;
-  --dropdown: #fff;
-  --shadow-rgb: 11, 20, 26;
-  --listItem: ##3b4a54;
-  --listItemHover: #f5f6f6;
-  --chat: #d9fdd3;
-  --chat-date-bg: #fff;
-  --chat-date: #1e2a30;
-  --chat-encrption-bg: #ffeecd;
-  --chat-encryption: #54656f;
-  --icon-focus: rgba(11, 20, 26, 0.1);
-  --scrollBar: #c0c6ce;
-  --head-title: #fff;
-  --header-bg: #008069;
-  --new-g: #111b21;
-  --settings-icon: #8696a0;
-  --profile-bg: #fff;
-  --profile-BGG: #f0f2f5;
-  --yur-name-abt: #008069;
-  --border-not: #e9edef;
-  --checked-border: #008069;
-  --checked-bg: #008069;
-  --uncheck: rgba(59, 74, 84);
-  --uncheck-circle: #667781;
-  --last-seen-title: #54656f;
-  --learn-more: #027eb5;
-  --b-con: #8696a0;
-  --ul: #667781;
-  --modal-bg: hsla(0, 0%, 100%, 0.85);
-  --modal-content-bg: #fff;
-  --modal-text: #3b4a54;
-  --modal-btn: rgba(134, 150, 160, 0.15);
-  --modal-btn2: #00a884;
-  --modal-btn-text: #111b21;
-  --modal-btn-hover: #06cf9c;
-  --modal-shadow: 11, 20, 26;
-  --hover-wallpaper: #fff;
-  --border-active: #009de2;
-  --contact-info-h2: #1e2a30;
-  --danger: #ea0038;
-  --status-text: gainsboro;
-  --status-right-text: #9494a1;
-
-  --intro-bg: #f0f2f5;
-  --intro-border: #25d366;
-  --intro-svg1: #DAF7F3;
-  --intro-svg2: #fff;
-  --intro-opacity: none;
-  --intro-svg3: #fff;
-  --intro-svg4: #eefefa;
-  --intro-svg5: #eefaf6;
-  --intro-text: #41525d;
-  --intro-sub-text: #667781;
-
-  --emoji-active-after: #009688;
-  --emoji-tab-active: rgba(0, 0, 0, .6);
-  --emoji-label: rgba(0, 0, 0, .45);
-  --emoji-tab: rgba(0, 0, 0, .32);
 }
