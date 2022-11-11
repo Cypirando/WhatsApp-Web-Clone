@@ -7,7 +7,7 @@ const elementoParaExibirADataDasMensagens = document.getElementById('data-conver
 
 /*---função para abrir chat de conversas---*/
 function opemRightSide() {
-  document.getElementById("rightSide").style.display = "flex"
+  document.getElementById("rightSide").style.display = "block"
   document.getElementById("Intro-Left").style.display = "none"
 }
 
@@ -158,52 +158,7 @@ function exibirDataMensagens(dia) {
 
 }
 
-
-
-
 /*---função para responder as conversas e colocar num novo array---*/
-// function adicionaItem(elemento) {
-//   // para de enviar arquivos para a pagina
-//   elemento.preventDefault();
-//   const texto = (this.querySelector('[name=item]')).value;
-//   const itemAtual = {
-//     message,
-    
-//     from: {
-//       id: "55",
-//       avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
-//       name: "Reginaldo rossi", 
-//     },
-//     read: "pendente",
-//     createdAt,
-//   }
-//   user_01.push(itemAtual);
-//   exibirNaTela(user_01);
-//   this.reset();
-// }
-
-// addItems.addEventListener('submit', adicionaItem);
-// exibirNaTela(user_01)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function criaMensagem(){
   let novoItem = document.getElementById('item')
 
@@ -211,7 +166,7 @@ function criaMensagem(){
     message: novoItem.value,
     id:8,
     from: {
-      id: "55",
+      id: "you",
       avatar: "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
       name: "Reginaldo rossi", 
     },
@@ -227,3 +182,5 @@ console.log(element)
   novoItem.value = ""
 
 }
+
+
