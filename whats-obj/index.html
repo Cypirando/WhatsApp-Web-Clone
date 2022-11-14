@@ -47,7 +47,7 @@
 
                 <!-- Icons -->
                 <div class="ICON">
-                    <button role="button" class="icons" onclick="openStatus()">
+                    <button role="button" class="icons">
                         <span class="">
                             <svg version="1.1" x="0" y="0" viewBox="0 0 24 24" width="24" height="24" class="">
                                 <path fill="currentColor"
@@ -119,7 +119,7 @@
         <div class="Right-Container" style="flex: 70%; display: flex;overflow: hidden;" id="right">
             <div class="rightSide" style="display: none;" id="rightSide">
                 <div class="header">
-                    <div class="imgText" id="id-perfil" role="button">
+                    <div class="imgText" id="id-perfil"  role="button">
                     </div>
 
                     <!-- Icons -->
@@ -146,43 +146,8 @@
                 </div>
 
                 <!-- ChatBox -->
-                <div class="chatBox" id="chat_box">
-                    <div>
-                        <div class="chat__date-wrapper"><span class="chat__date"> 04/06/2021</span></div>
-                        <p class="chat__encryption-msg">
-                            <svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" class="chat__encryption-icon">
-                                <path
-                                    d="M5.00847986,1.6 C6.38255462,1.6 7.50937014,2.67435859 7.5940156,4.02703389 L7.59911976,4.1906399 L7.599,5.462 L7.75719976,5.46214385 C8.34167974,5.46214385 8.81591972,5.94158383 8.81591972,6.53126381 L8.81591972,9.8834238 C8.81591972,10.4731038 8.34167974,10.9525438 7.75719976,10.9525438 L2.25767996,10.9525438 C1.67527998,10.9525438 1.2,10.4731038 1.2,9.8834238 L1.2,6.53126381 C1.2,5.94158383 1.67423998,5.46214385 2.25767996,5.46214385 L2.416,5.462 L2.41679995,4.1906399 C2.41679995,2.81636129 3.49135449,1.68973395 4.84478101,1.60510326 L5.00847986,1.6 Z M5.00847986,2.84799995 C4.31163824,2.84799995 3.73624912,3.38200845 3.6709675,4.06160439 L3.6647999,4.1906399 L3.663,5.462 L6.35,5.462 L6.35111981,4.1906399 C6.35111981,3.53817142 5.88169076,2.99180999 5.26310845,2.87228506 L5.13749818,2.85416626 L5.00847986,2.84799995 Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                            As mensagens são criptografadas de ponta a ponta. Ninguém fora deste chat, nem mesmo o
-                            WhatsApp, pode
-                            lê-los ou ouvi-los. Clique para aprender mais.
-                        </p>
-
-                        <p class="chatMessage my-chat">
-                            <span>Hi </span>
-                            <span class="chat__msg-filler"> </span>
-                            <span class="msg-footer">
-                                <span>08:11 AM</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"
-                                    aria-label="read" class="chat-icon--blue">
-                                    <path fill="currentColor"
-                                        d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z">
-                                    </path>
-                                </svg>
-                            </span>
-                            <button aria-label="Message options" class="chat__msg-options"><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" width="19" height="20"
-                                    class="chat__msg-options-icon">
-                                    <path fill="currentColor"
-                                        d="M3.8 6.7l5.7 5.7 5.7-5.7 1.6 1.6-7.3 7.2-7.3-7.2 1.6-1.6z">
-                                    </path>
-                                </svg>
-                            </button>
-                        </p>
-                    </div>
+                <div class="chatBox" id="chat_box"  >
+                   
                 </div>
 
                 <div class="chat-footer">
@@ -352,9 +317,8 @@
                         </div>
                         <div class="search-bar1">
                             <div>
-                                <form id="novoItem"></form>
-                                <input id="item" placeholder="Mensagem" class="send-message">
-
+                                <input id="answer" placeholder="Mensagem" class="send-message answer" required>
+                            
                                 <button role="button" class="search1">
                                     <span class="">
                                         <svg viewBox="0 0 24 24" width="24" height="24" class="">
@@ -364,7 +328,8 @@
                                         </svg>
                                     </span>
                                 </button>
-                                <span class="go-back1" id="enviar-msg">
+                                <!-- <button onclick="scrolView()">1 </button> -->
+                                <span  class="go-back1"   onclick="newAnswer()">
                                     </path>
                                     <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet"
                                         class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"
@@ -463,6 +428,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/contacts.js"></script>
+    
 </body>
 
 </html>

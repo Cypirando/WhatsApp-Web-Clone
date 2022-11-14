@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 .animate__animated {
     --animate-duration: 200ms;

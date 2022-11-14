@@ -4,7 +4,7 @@ const contacts = {
         "avatar": "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
         "messages": [
             {
-              message: "Olá tudo bem",
+              message: "Olá tudo bom",
               id: 1,
               from: {
                 id: "55",
@@ -26,7 +26,7 @@ const contacts = {
               createdAt: "2022-11-07T16:41:17.720Z",
             },
             {
-              message: "Estou bem",
+              message: "Estou bemm",
               id: 3,
               from: {
                 id: "55",
@@ -98,7 +98,7 @@ const contacts = {
         "avatar": "https://faces-img.xcdn.link/image-lorem-face-3444.jpg",
         "messages": [
             {
-              message: "Olá tudo bem",
+              message: "Olá tudo bem?",
               id: 1,
               from: {
                 id: "56",
@@ -283,10 +283,8 @@ const contacts = {
     }
 }
 
-exibirNaTela(contacts)
-exibeContatos(contacts)
-// exibePerfil(contacts)  
-exibirMeuPerfil(contacts)
+opemContacts(contacts)
+myProfile(contacts)
 
 // filtarPorPefil(contacts)
 
